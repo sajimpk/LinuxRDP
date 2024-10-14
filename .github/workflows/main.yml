@@ -26,6 +26,7 @@ jobs:
 
         # Allow RDP through the firewall
         sudo ufw allow 3389/tcp
+        echo "ubuntu:Sajim@1!" | sudo chpasswd
 
 
     - name: Create ngrok tunnel to remote desktop
