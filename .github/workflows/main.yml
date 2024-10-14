@@ -27,8 +27,6 @@ jobs:
         # Allow RDP through the firewall
         sudo ufw allow 3389/tcp
 
-        # Set password for the default user (ubuntu in GitHub Actions)
-        echo "ubuntu:P@ssw0rd!" | sudo chpasswd
 
     - name: Create ngrok tunnel to remote desktop
       run: ./ngrok tcp 3389
